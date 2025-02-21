@@ -1,0 +1,105 @@
+.footer {
+    background: #bbc8eea2;
+    color: #5a5151;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #cdbde8;
+  }
+  
+  .footer-brand {
+    text-align: left;
+    max-width: 250px;
+  }
+  
+  .footer-brand h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #cb53e9;
+  }
+  
+  .footer-brand p {
+    font-size: 14px;
+    color: #44444d;
+  }
+  
+  .courses {
+    text-align: left;
+  }
+  
+  .courses h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #4cca50dd;
+  }
+  
+  .courses p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #9e8a8a;
+  }
+  
+  .footer-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .footer-links .quick {
+    font-size: 18px;
+    color: #4cca50dd;
+    font-weight: 700;
+  }
+
+  .footer-links li a {
+    color: #9e8a8a;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .footer-links li a:hover {
+    color: #2a2928;
+  }
+
+  .social-links .follow {
+    font-size: 18px;
+    color: #4cca50dd;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .footer-socials {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .footer-socials img {
+    width: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .footer-socials img:hover {
+    transform: scale(1.1);
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #6f6767;
+  }
+  

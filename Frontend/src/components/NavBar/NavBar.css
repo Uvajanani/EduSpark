@@ -1,0 +1,120 @@
+.navbar {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    width: 50px;
+}
+
+.navbar-menus {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    color: #49557e;
+    font-size: 18px;
+}
+
+.navbar-menus a {
+    text-decoration: none;
+    color: #49557e;
+}
+
+.navbar-menus a:hover {
+    color: #ef476f;
+}
+
+.navbar button{
+    font-size: 16px;
+    color: white;
+    background-color: #49557e;
+    border: 1px solid rgb(105, 71, 255);
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-right: 20px;
+}
+
+.navbar button:hover{
+    background-color: #ef476f;
+    color: white;
+    border: 1px solid white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu-icon img {
+    width: 30px; 
+    height: 30px;
+  }
+  
+  .menu-icon:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .navbar-logo {
+    height: 80px; /* Adjust size */
+    width: 120px; /* Maintain aspect ratio */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .navbar-logo:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+  }
+  
+
+
+@media (max-width:1050px){
+    .navbar .logo{
+        width: 140px;
+    }
+    .navbar-menus{
+        gap: 20px;
+        font-size: 17px;
+    }
+
+    button{
+        padding: 8px 25px;
+    }
+}
+
+@media (max-width:900px){
+    .navbar .logo{
+        width: 120px;
+    }
+    .navbar-menus{
+        gap: 15px;
+        font-size: 16px;
+    }
+    
+    button{
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width:600px){
+    .navbar-menus{
+        display: none;
+    }
+}

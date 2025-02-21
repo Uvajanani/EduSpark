@@ -1,0 +1,146 @@
+.biology-learning-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.left-bio {
+    width: 60%; /* 60% of the width */
+    height: 100vh;
+    overflow-y: auto; /* Allows scrolling if content overflows */
+    background-color: #f8f9fa; /* Light background for better visibility */
+    padding: 20px;
+}
+
+.right-bio {
+    width: 40%; /* 40% of the width */
+    height: 100vh;
+    overflow-y: auto; /* Allows scrolling if content overflows */
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+}
+
+/* Style adjustments for better layout */
+.sub-div {
+    background: #eef1f7;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.sub-div h5 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.content p {
+    margin: 5px 0;
+    padding: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.content p:hover {
+    background: #d4dcead4;
+    border-radius: 5px;
+}
+
+/* Progress bar styling */
+.progress-bar progress {
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+}
+
+
+.biology-text {
+    width: 100%;
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+/* 🎯 Headings */
+.biology-text h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 26px;
+}
+
+.biology-text h3 {
+    color: #444;
+    margin-top: 20px;
+    font-size: 22px;
+    border-bottom: 2px solid #4A90E2;
+    padding-bottom: 5px;
+}
+
+.biology-text p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* 📌 Lists */
+.biology-text ul {
+    padding-left: 20px;
+}
+
+.biology-text li {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+/* ✅ Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+th {
+    background: #4A90E2;
+    color: white;
+    font-size: 18px;
+}
+
+td {
+    font-size: 16px;
+}
+
+/* 🎨 Styling for important points */
+.highlight {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+/* 🛠 Responsive Design */
+@media (max-width: 1024px) {
+    .biology-learning-container {
+        flex-direction: column;
+    }
+
+    .left-bio, .right-bio {
+        width: 100%;
+    }
+
+    .biology-text {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .biology-text {
+        padding: 15px;
+    }
+}

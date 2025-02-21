@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap');
+
+* {
+  font-family: Outfit;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}

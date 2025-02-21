@@ -1,0 +1,46 @@
+.test-container {
+    padding: 20px;
+    margin: auto;
+    text-align: left; /* Align text to the left */
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #3c93b3;
+    margin-bottom: 20px;
+  }
+  
+  .ncert-practice {
+    display: flex;
+    justify-content: flex-start; /* Align items to the start (left) */
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .ncert, .practice {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .ncert:hover, .practice:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
+  .ncert img, .practice img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #555;
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,46 @@
+.pracqns h2 {
+    font-size: 24px;
+    color: #3c93b3;
+    margin-bottom: 1px;
+    text-align: left;
+    padding-left: 20px;
+  }
+  
+  .sub-topics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    align-items: start;
+  }
+  
+  .compare, .formation, .place, .large, .numberSystem, 
+  .interconversion, .perpendicular, .polygon, .triangle, .quadrilateral {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .compare:hover, .formation:hover, .place:hover, .large:hover, 
+  .numberSystem:hover, .interconversion:hover, .perpendicular:hover, 
+  .polygon:hover, .triangle:hover, .quadrilateral:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
+  .sub-topics img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .sub-topics p {
+    font-size: 16px;
+    color: #555;
+    font-weight: bold;
+  }
+  

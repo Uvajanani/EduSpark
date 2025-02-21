@@ -1,0 +1,54 @@
+.maths-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .maths-learn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .maths-video {
+    margin-bottom: 20px;
+  }
+  
+  .maths-text {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+  }
+  
+  .maths-text h3 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .maths-text h4 {
+    color: #444;
+    margin-top: 20px;
+  }
+  
+  .maths-text ul {
+    padding-left: 20px;
+  }
+  
+  .maths-text li {
+    margin-bottom: 5px;
+  }
+  
+  .highlight {
+    color: #d9534f;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .maths-text {
+      padding: 15px;
+    }
+  }
+  

@@ -1,0 +1,132 @@
+.sidebar {
+    width: 320px;
+    height: 100vh;
+    background-color: white;
+    color: rgb(130, 107, 235);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu-bar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-img img {
+    margin-top: 10px;
+    width: 30px; 
+    height: 30px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.menu-title h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #466aba;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+
+.top-sidebar {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: #d4dcead4;
+    cursor: pointer;
+}
+
+.top-img img {
+    width: 35px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.top-contents h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.top-contents p {
+    font-size: 14px;
+    margin: 0;
+    color: #857a7a;
+}
+
+.Home, .all-Subjects, .practice-qns, .ask-a-doubt {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+.home-img img, .all-subjects-img img, .practice-qns-img img, .ask-a-doubt-img img {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.home-contents a, .all-subjects-contents a, .practice-qns-contents a, .ask-a-doubt-contents a {
+    text-decoration: none;
+    color: #857a7a;;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.Home:hover, .all-Subjects:hover, .practice-qns:hover, .ask-a-doubt:hover {
+    background-color: #d4dcead4;
+}
+
+.Home:hover img, .all-Subjects:hover img, .practice-qns:hover img, .ask-a-doubt:hover img {
+    background-color: #d4dcead4;
+    border-radius: 8px;
+}
+
+.Home:hover a, .all-Subjects:hover a, .practice-qns:hover a, .ask-a-doubt:hover a {
+    color: #31302d;
+}
+
+
+.sidebar {
+    width: 320px;
+    height: 100vh;
+    background-color: white;
+    color: rgb(130, 107, 235);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1000; /* Ensures it stays on top */
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1); /* Adds slight shadow for better visibility */
+}
+
+/* Ensuring it does not get overlapped */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Prevent content from being hidden behind the sidebar */
+.main-content {
+    margin-left: 320px; /* Pushes main content to the right */
+    padding: 20px;
+}

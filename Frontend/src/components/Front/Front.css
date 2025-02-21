@@ -1,0 +1,120 @@
+.front {
+    margin: 50px;
+}
+
+.front h2 {
+    font-size: 45px;
+    font-weight: 700;
+    color: #5865eed6;
+    margin: 10px 0;
+}
+
+.front p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #6e6c6f;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.explore h3{
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #8272d1;
+}
+
+.explore p{
+    color: #6e6c6f;
+    margin-bottom: 50px;
+}
+
+
+.explore span {
+    color: #ba1f93;
+    font-weight: 700;
+}
+
+.explore img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.front .copyright {
+    font-size: 14px;
+    font-weight: 500;
+    color: #6e6c6f;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.left-right {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.doubt-test {
+    display: flex;
+    justify-content: center; 
+    gap: 50px;
+    margin-top: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.doubt, .test {
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+    cursor: pointer;
+    padding: 15px;
+    min-width: 250px;
+}
+
+.doubt-content {
+    padding-top: 20px;
+}
+
+.doubt-img, .test-img {
+    width: 40px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.doubt-img img, .test-img img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.doubt {
+    background-color: rgba(250, 190, 110, 0.708);
+    border-radius: 20px;
+}
+
+.test {
+    background-color: rgba(159, 244, 207, 0.614);
+    border-radius: 20px;
+}
+
+.doubt-content h4 {
+    font-size: 20px;
+    
+}
+
+.hide p {
+    margin: 15px;
+}
+
+@media (max-width: 768px) {
+    .hide {
+      display: none;
+    }
+  }
+  

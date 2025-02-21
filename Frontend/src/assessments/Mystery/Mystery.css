@@ -1,0 +1,110 @@
+
+  
+  .quiz-container {
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  /* Question Styles */
+  h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Image Grid for Image-Based Questions */
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .image-grid img {
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .image-grid img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Map Question Container */
+  .map-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* Answer Button Styles */
+  button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Feedback Popup */
+  .feedback-popup {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .feedback-popup p {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  /* Dialog Styling */
+  .dialog {
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .dialog-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  /* Next Button */
+  .next-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .next-button:hover {
+    background-color: #0056b3;
+  }

@@ -1,0 +1,96 @@
+.subjects {
+    margin: 30px 50px;
+}
+
+.subjects h2 {
+    color: rgb(71, 60, 60);
+    margin-bottom: 20px;
+}
+
+.subjects p {
+    color: rgb(71, 60, 60);
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.all-subjects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.all-subjects img {
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.all-subjects p {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(71, 60, 60);
+    margin-top: 10px;
+}
+
+
+.English {
+    background-color: #b0f7c5c2;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Maths {
+    background-color: #f8bdd3a1;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Physics {
+    background-color: #f7bcb0a8;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Chemistry {
+    background-color: #b0cbf7c2;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Biology {
+    background-color: #c3f7b0c2;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.History {
+    background-color: #f5f7b0c2;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Geography {
+    background-color: #d0b0f7c2;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.Civics {
+    background-color: #f7d5b0c2;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.English:hover, .Maths:hover, .Physics:hover, .Chemistry:hover, .Biology:hover, .History:hover, .Geography:hover, .Civics:hover {
+    transform: scale(1.05);
+}
