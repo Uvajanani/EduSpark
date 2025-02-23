@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './NavBar.css';
 import { assets } from '../../assets/assets';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-
+import { StoreContext } from '../../context/StoreContextProvider';
 const NavBar = ({showMenu, setShowMenu, setshowLogin}) => { 
 
   const navigate = useNavigate()
   const location = useLocation();
+  const { token, setToken } = useContext(StoreContext);
+
+  const logout = () => {
+    localStorage.removeItem("token")
+    setToken("")
+    navigate("/")
+}
 
   return (
     <div className='navbar'>
@@ -25,7 +32,13 @@ const NavBar = ({showMenu, setShowMenu, setshowLogin}) => {
         <li><Link to='/contact'>Contact Us</Link></li>
       </ul>
 
-      <button onClick={() => setshowLogin(true)}>Sign In</button>
+      {!token ? <button onClick={() => setshowLogin(true)}>Sign In</button>
+                 : <div className='navbar-profile'>
+                        <img src={assets.profile_icon} alt="" /> 
+                        <ul className="nav-profile-dropdown">
+                            <li onClick={logout}><img src={assets.logout_icon} alt="" /><p>Logout</p></li>
+                        </ul>
+                   </div>}
     </div>
   );
 };

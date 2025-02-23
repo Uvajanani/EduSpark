@@ -61,6 +61,10 @@ import logo from './logo2.png'
 import mathslearn1 from './mathslearn1.png'
 import Maths1 from './Chapter_1_Maths.pdf'
 import Maths2 from './Chapter_4_Maths.pdf'
+import logout_icon from './logout.png'
+import ten1 from './ten1.webp'
+import ten2 from './ten2.webp'
+import ten3 from './ten3.webp'
 
 
 export const assets = {
@@ -126,7 +130,11 @@ export const assets = {
     logo,
     mathslearn1,
     Maths1,
-    Maths2
+    Maths2,
+    logout_icon,
+    ten1,
+    ten2,
+    ten3
 }
 
 

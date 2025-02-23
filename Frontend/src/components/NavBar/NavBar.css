@@ -1,120 +1,157 @@
+/* General Navbar Styling */
 .navbar {
-    padding: 20px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #fff;
+    padding: 15px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
-.navbar .logo {
-    width: 50px;
+/* Logo Styling */
+.navbar-logo {
+    height: 50px;
+    width: 80px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
 
+.navbar-logo:hover {
+    transform: scale(1.1);
+}
+
+/* Navbar Menu */
 .navbar-menus {
     display: flex;
     list-style: none;
-    gap: 30px;
-    color: #49557e;
+    gap: 25px;
     font-size: 18px;
+    font-weight: 500;
 }
 
 .navbar-menus a {
     text-decoration: none;
     color: #49557e;
+    transition: color 0.3s ease;
 }
 
 .navbar-menus a:hover {
     color: #ef476f;
 }
 
-.navbar button{
+/* Menu Icon for Mobile */
+.menu-icon {
+    /* display: none; */
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.menu-icon:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Sign In Button */
+.navbar button {
     font-size: 16px;
     color: white;
     background-color: #49557e;
-    border: 1px solid rgb(105, 71, 255);
-    padding: 10px 30px;
+    border: none;
+    padding: 10px 25px;
     border-radius: 50px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 0.3s;
     margin-right: 20px;
 }
 
-.navbar button:hover{
+.navbar button:hover {
     background-color: #ef476f;
-    color: white;
-    border: 1px solid white;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-    padding: 10px 20px;
+/* Profile Dropdown */
+.navbar-profile {
+    position: relative;
+    cursor: pointer;
+}
+
+.navbar-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.nav-profile-dropdown {
+    position: absolute;
+    right: 0;
+    background: white;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .menu-icon {
+    border-radius: 5px;
+    display: none;
+    width: 150px;
+}
+
+.navbar-profile:hover .nav-profile-dropdown {
+    display: block;
+}
+
+.nav-profile-dropdown li {
     display: flex;
     align-items: center;
+    padding: 10px;
     cursor: pointer;
-    padding: 8px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .menu-icon img {
-    width: 30px; 
-    height: 30px;
-  }
-  
-  .menu-icon:hover {
-    background-color: rgba(0, 0, 0, 0.05);
-  }
+    transition: background 0.3s;
+}
 
-  .navbar-logo {
-    height: 80px; /* Adjust size */
-    width: 120px; /* Maintain aspect ratio */
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .navbar-logo:hover {
-    transform: scale(1.1); /* Slight zoom effect on hover */
-  }
-  
+.nav-profile-dropdown li:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
 
+.nav-profile-dropdown img {
+    width: 20px;
+    margin-right: 10px;
+}
 
-@media (max-width:1050px){
-    .navbar .logo{
-        width: 140px;
-    }
-    .navbar-menus{
+/* Responsive Design */
+@media (max-width: 1050px) {
+    .navbar-menus {
         gap: 20px;
         font-size: 17px;
     }
 
-    button{
-        padding: 8px 25px;
-    }
-}
-
-@media (max-width:900px){
-    .navbar .logo{
-        width: 120px;
-    }
-    .navbar-menus{
-        gap: 15px;
-        font-size: 16px;
-    }
-    
-    button{
-        padding: 7px 20px;
+    .navbar button {
+        padding: 8px 20px;
         font-size: 15px;
     }
 }
 
-@media (max-width:600px){
-    .navbar-menus{
+@media (max-width: 900px) {
+    .navbar-menus {
+        gap: 15px;
+        font-size: 16px;
+    }
+    
+    .navbar button {
+        padding: 7px 18px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-menus {
         display: none;
+    }
+
+    .menu-icon {
+        display: flex;
     }
 }

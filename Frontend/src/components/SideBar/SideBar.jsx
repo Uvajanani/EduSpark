@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import './SideBar.css';
 import { assets } from '../../assets/assets';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Chatbot from '../ChatBot/ChatBot';
 
 const SideBar = ({showMenu, setShowMenu, isOpen, setisOpen}) => {
-     
+   
+    
     return (
         <>
             {showMenu && (

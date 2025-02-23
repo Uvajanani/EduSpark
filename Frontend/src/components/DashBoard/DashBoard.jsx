@@ -107,7 +107,7 @@ const Dashboard = () => {
                         <h2>{user.name}</h2>
                         <p>{user.email}</p>
                         <p>🔥 Streak: {user.streak} Days</p>
-                        <button onClick={() => alert("Edit Profile Coming Soon!")}>Edit Profile</button>
+                        {/* <button onClick={() => alert("Edit Profile Coming Soon!")}>Edit Profile</button> */}
                     </div>
                 </div>
 

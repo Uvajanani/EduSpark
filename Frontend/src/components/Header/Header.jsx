@@ -7,7 +7,7 @@ const Header = () => {
     <div className='header'>
         <img src={assets.header_img} alt="" />
         <div className='header-contents'>
-            
+           
         </div>
     </div>
   )
